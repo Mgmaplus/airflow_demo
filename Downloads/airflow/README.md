@@ -25,6 +25,7 @@ A prequesite to run the udac_example_dag.py script we will run a Redshift cluste
 **dags**
 - udac_example_dag.py
 Intializes de DAG, creates the tasks, and sets the pipeline flow to produce staging and later fact and dimensions tables with a QA step to produce Sparkify's star schema warehouse inside Redshift. 
+
 **operators**
 - data_quality.py
 A airflow custom operator to verify data is being retrieved from sources and dimension tables have been populated.
@@ -34,6 +35,7 @@ Defines a custom operator to load dimension tables which can handle all sql inse
 Custom operator that uses staging tables to generate the fact table and allows data to be truncated or appended through the task parameters.
 - stage_redshift.py
 First operator in the DAG that loads data to Redshift into staging tables and works with log_data and song_data.
+
 **helpers**
 - sql_queries.py
 Set of sql queries used by tasks in the DAG to insert data from staging to dimensions and fact tables.
