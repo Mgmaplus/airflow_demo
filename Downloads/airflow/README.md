@@ -15,15 +15,14 @@ With Airflow the ETL process is now automated from end to end where data ingesti
 
 #### S3 datasets 
 
->> LOG_DATA='s3://udacity-dend/log_data'
+LOG_DATA='s3://udacity-dend/log_data'
 
->> SONG_DATA='s3://udacity-dend/song_data'
+SONG_DATA='s3://udacity-dend/song_data'
 
 These are located in a s3 bucket in the us-west-2 region and both in json format. 
 
 ### RUN
-To run the udac_example_dag.py script we will run a Redshift cluster on AWS in the us-west-2 region.
-A prequesite is to have the EMR cluster available in the us-west-2 region.
+A prequesite to run the udac_example_dag.py script we will run a Redshift cluster on AWS in the us-west-2 region.
 
 ## CONTENT
 #dags
