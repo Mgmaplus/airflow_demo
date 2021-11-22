@@ -23,7 +23,7 @@ A prequesite to run the udac_example_dag.py script we will run a Redshift cluste
 
 ## CONTENT
 **dags**
-- udac_example_dag.py
+- udac_example_dag.py:
 Intializes de DAG, creates the tasks, and sets the pipeline flow to produce staging and later fact and dimensions tables with a QA step to produce Sparkify's star schema warehouse inside Redshift. 
 
 **operators**
